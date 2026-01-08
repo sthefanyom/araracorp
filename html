@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arara Corp | Código com identidade brasileira</title>
+  <meta name="description" content="Arara Corp é um coletivo brasileiro de desenvolvedores que cria sites e soluções digitais com identidade, colaboração e propósito." />
+
+  <style>
+    :root {
+      --azul-escuro: #0F2C50;
+      --azul: #1E5AA8;
+      --verde: #2BB673;
+      --amarelo: #F2C94C;
+      --offwhite: #F9F9F9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', system-ui, Arial, sans-serif;
+    }
+
+    body {
+      background: var(--offwhite);
+      color: var(--azul-escuro);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      padding: 4rem 2rem;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at top right, rgba(43,182,115,0.15), transparent 40%),
+        radial-gradient(circle at bottom left, rgba(242,201,76,0.15), transparent 40%),
+        linear-gradient(135deg, #0F2C50, #123F73);
+      color: white;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 3.4rem;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 span {
+      color: var(--amarelo);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 520px;
+      opacity: 0.95;
+    }
+
+    .hero-cta {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      padding: 0.9rem 2.2rem;
+      border-radius: 999px;
+      background: var(--amarelo);
+      color: var(--azul-escuro);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .btn-secondary {
+      padding: 0.9rem 2.2rem;
+      border-radius: 999px;
+      border: 2px solid rgba(255,255,255,0.5);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero-symbol {
+      font-size: 12rem;
+      text-align: center;
+      opacity: 0.25;
+    }
+
+    section {
+      padding: 6rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .value-card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(15,44,80,0.08);
+    }
+
+    .value-card h3 {
+      margin-bottom: 0.8rem;
+      font-size: 1.3rem;
+    }
+
+    .manifesto {
+      background: linear-gradient(135deg, #EAF2FB, #FFFFFF);
+      border-radius: 32px;
+      padding: 4rem 3rem;
+      text-align: center;
+    }
+
+    .manifesto p {
+      font-size: 1.4rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .manifesto strong {
+      color: var(--azul);
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .service {
+      border-left: 6px solid var(--verde);
+      padding: 2rem 2rem 2rem 1.5rem;
+      background: white;
+      border-radius: 16px;
+    }
+
+    footer {
+      background: var(--azul-escuro);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      opacity: 0.85;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero p {
+        margin: 0 auto;
+      }
+
+      .hero-symbol {
+        font-size: 8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="hero">
+    <div>
+      <h1>
+        Tecnologia <span>feita em coletivo</span>
+      </h1>
+      <p>
+        A <strong>Arara Corp</strong> é um coletivo brasileiro de pessoas desenvolvedoras que cria
+        sites e soluções digitais com identidade, colaboração e propósito.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contato" class="btn-primary">Vamos criar juntos</a>
+        <a href="#manifesto" class="btn-secondary">Nosso manifesto</a>
+      </div>
+    </div>
+
+    <div class="hero-symbol">🦜</div>
+  </div>
+</header>
+
+<section>
+  <h2>O que nos move</h2>
+  <div class="values">
+    <div class="value-card">
+      <h3>Coletivo acima do ego</h3>
+      <p>
+        Acreditamos que soluções melhores surgem da troca, da escuta e da construção conjunta.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <h3>Identidade brasileira</h3>
+      <p>
+        Criamos tecnologia que respeita contexto, cultura e diversidade. Código também é linguagem.
+      </p>
+    </div>
+
+    <div class="value-card">
+      <h3>Tecnologia com propósito</h3>
+      <p>
+        Não entregamos só sites. Entregamos presença digital com sentido e estratégia.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="manifesto" class="manifesto">
+  <h2>Manifesto Arara Corp</h2>
+  <p>
+    Tecnologia não nasce pronta. Ela nasce do encontro.<br><br>
+    Criamos em coletivo porque acreditamos que diversidade gera inovação.
+    Desenvolvemos com escuta, cuidado e intenção.<br><br>
+    <strong>Código com identidade brasileira.</strong>
+  </p>
+</section>
+
+<section>
+  <h2>O que fazemos na prática</h2>
+  <div class="services">
+    <div class="service">
+      <h3>Sites institucionais & landing pages</h3>
+      <p>Presença digital alinhada à sua identidade e objetivos reais.</p>
+    </div>
+
+    <div class="service">
+      <h3>Design & experiência</h3>
+      <p>Interfaces acessíveis, humanas e pensadas para pessoas reais.</p>
+    </div>
+
+    <div class="service">
+      <h3>Soluções sob medida</h3>
+      <p>Projetos construídos de forma colaborativa, do conceito ao código.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Vamos construir juntos?</h2>
+  <p>
+    Se sua ideia precisa de forma, identidade e tecnologia com propósito,
+    o coletivo Arara Corp quer ouvir você.
+  </p>
+  <br>
+  <a href="mailto:contato@araracorp.com" class="btn-primary">Falar com a Arara Corp</a>
+</section>
+
+<footer>
+  <p>© 2026 Arara Corp — Tecnologia feita em coletivo.</p>
+</footer>
+
+</body>
+</html>
