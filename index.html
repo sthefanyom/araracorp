@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arara Corp | Código com identidade brasileira</title>
-  <meta name="description" content="Arara Corp é um coletivo brasileiro de desenvolvedores que cria sites e soluções digitais com identidade, colaboração e propósito." />
+
+  <meta name="description" content="Arara Corp é um coletivo brasileiro de pessoas desenvolvedoras que cria sites e soluções digitais com identidade, colaboração e propósito." />
 
   <style>
     :root {
@@ -27,6 +28,8 @@
       color: var(--azul-escuro);
       line-height: 1.6;
     }
+
+    /* ===== HERO ===== */
 
     header {
       min-height: 100vh;
@@ -79,6 +82,11 @@
       color: var(--azul-escuro);
       font-weight: 700;
       text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
     }
 
     .btn-secondary {
@@ -90,11 +98,20 @@
       font-weight: 600;
     }
 
-    .hero-symbol {
-      font-size: 12rem;
-      text-align: center;
-      opacity: 0.25;
+    .hero-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
+    .hero-logo img {
+      max-width: 320px;
+      width: 100%;
+      opacity: 0.95;
+      filter: drop-shadow(0 20px 40px rgba(0,0,0,0.25));
+    }
+
+    /* ===== SEÇÕES ===== */
 
     section {
       padding: 6rem 2rem;
@@ -149,11 +166,13 @@
     }
 
     .service {
-      border-left: 6px solid var(--verde);
-      padding: 2rem 2rem 2rem 1.5rem;
       background: white;
+      border-left: 6px solid var(--verde);
+      padding: 2rem;
       border-radius: 16px;
     }
+
+    /* ===== FOOTER ===== */
 
     footer {
       background: var(--azul-escuro);
@@ -167,6 +186,8 @@
       font-size: 0.95rem;
     }
 
+    /* ===== RESPONSIVO ===== */
+
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
@@ -177,66 +198,73 @@
         margin: 0 auto;
       }
 
-      .hero-symbol {
-        font-size: 8rem;
+      .hero-logo img {
+        max-width: 220px;
+        margin-top: 2rem;
       }
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <div class="hero">
     <div>
-      <h1>
-        Tecnologia <span>feita em coletivo</span>
-      </h1>
+      <h1>Tecnologia <span>feita em coletivo</span></h1>
+
       <p>
         A <strong>Arara Corp</strong> é um coletivo brasileiro de pessoas desenvolvedoras que cria
         sites e soluções digitais com identidade, colaboração e propósito.
       </p>
 
       <div class="hero-cta">
-        <a href="#contato" class="btn-primary">Vamos criar juntos</a>
+        <a
+          href="https://www.instagram.com/araracorp"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary"
+        >
+          Vamos criar juntos
+        </a>
+
         <a href="#manifesto" class="btn-secondary">Nosso manifesto</a>
       </div>
     </div>
 
-    <div class="hero-symbol">🦜</div>
+    <div class="hero-logo">
+      <img src="assets/araralogo.jpg" alt="Logo Arara Corp">
+    </div>
   </div>
 </header>
 
 <section>
   <h2>O que nos move</h2>
+
   <div class="values">
     <div class="value-card">
       <h3>Coletivo acima do ego</h3>
-      <p>
-        Acreditamos que soluções melhores surgem da troca, da escuta e da construção conjunta.
-      </p>
+      <p>Soluções melhores nascem da troca, da escuta e da construção conjunta.</p>
     </div>
 
     <div class="value-card">
       <h3>Identidade brasileira</h3>
-      <p>
-        Criamos tecnologia que respeita contexto, cultura e diversidade. Código também é linguagem.
-      </p>
+      <p>Tecnologia também é linguagem, contexto e cultura.</p>
     </div>
 
     <div class="value-card">
       <h3>Tecnologia com propósito</h3>
-      <p>
-        Não entregamos só sites. Entregamos presença digital com sentido e estratégia.
-      </p>
+      <p>Presença digital com sentido, estratégia e impacto real.</p>
     </div>
   </div>
 </section>
 
 <section id="manifesto" class="manifesto">
   <h2>Manifesto Arara Corp</h2>
+
   <p>
     Tecnologia não nasce pronta. Ela nasce do encontro.<br><br>
-    Criamos em coletivo porque acreditamos que diversidade gera inovação.
+    Criamos em coletivo porque diversidade gera inovação.<br>
     Desenvolvemos com escuta, cuidado e intenção.<br><br>
     <strong>Código com identidade brasileira.</strong>
   </p>
@@ -244,15 +272,16 @@
 
 <section>
   <h2>O que fazemos na prática</h2>
+
   <div class="services">
     <div class="service">
-      <h3>Sites institucionais & landing pages</h3>
+      <h3>Sites & landing pages</h3>
       <p>Presença digital alinhada à sua identidade e objetivos reais.</p>
     </div>
 
     <div class="service">
       <h3>Design & experiência</h3>
-      <p>Interfaces acessíveis, humanas e pensadas para pessoas reais.</p>
+      <p>Interfaces humanas, acessíveis e pensadas para pessoas reais.</p>
     </div>
 
     <div class="service">
@@ -262,14 +291,24 @@
   </div>
 </section>
 
-<section id="contato">
+<section>
   <h2>Vamos construir juntos?</h2>
+
   <p>
     Se sua ideia precisa de forma, identidade e tecnologia com propósito,
-    o coletivo Arara Corp quer ouvir você.
+    a Arara Corp quer ouvir você.
   </p>
+
   <br>
-  <a href="mailto:contato@araracorp.com" class="btn-primary">Falar com a Arara Corp</a>
+
+  <a
+    href="https://www.instagram.com/araracorp"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn-primary"
+  >
+    Falar com a Arara Corp
+  </a>
 </section>
 
 <footer>
